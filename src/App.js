@@ -1,10 +1,14 @@
-import { useState } from "react";
-import RefTest from "./RefTest";
-import Iteration from"./Iteration";
-function App() {
+import { useState, useEffect, useReducer } from "react";
+import SassComponent from "./SassComponent";
+function getRandomColor() {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+const App = () => {
+
   return (
     <div>
-     <Iteration />
+      <SassComponent />
     </div >
   );
 }
